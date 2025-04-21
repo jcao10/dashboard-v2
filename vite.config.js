@@ -19,5 +19,10 @@ export default defineConfig({
         chunkFileNames: 'assets/[name]-[hash].js'
       }
     }
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src')
+    }
   }
 })
